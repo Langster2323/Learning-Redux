@@ -5,4 +5,9 @@ import { render } from 'react-dom';
 // Import css
 import css from './styles/style.styl';
 
-render(<p>h1</p>, document.getElementById('root'));
+// Import Components
+import Main from './components/Main';
+import Single from './components/Single';
+import PhotoGrid from './components/PhotoGrid';
+
+render(<Main/>, document.getElementById('root'));

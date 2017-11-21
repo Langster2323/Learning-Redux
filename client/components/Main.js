@@ -10,7 +10,8 @@ const Main = React.createClass({
         </h1>
         //The child will be either photogrid or single grid...
         // Populated by react router
-        {React.cloneElement(this.props.children)}
+        // this.props will take any props from the parent components to the children components...
+        {React.cloneElement(this.props.children, this.props)}
       </div>
     );
   },
